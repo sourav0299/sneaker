@@ -1,0 +1,382 @@
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 50px;
+}
+.navTop{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.searchInput{
+    border: none;
+    border-color:transparent;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: green;
+    cursor: pointer;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: azure;
+    font-weight: 400;
+}
+.slider{
+    width: 1522px;
+    height: 456px; 
+    overflow: hidden;
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 2s ease-in-out;
+}
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sliderTitle{
+    position: absolute;
+    top: 7%;
+    font-size: 60px;
+    right: 40%;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+}
+.buyNow{
+    background-color: black;
+    cursor: pointer;
+    border-radius: 0px;
+    border: 1px solid gray;
+    padding: 3px; 
+    color: whitesmoke;
+    margin-left: 8px;
+}
+.buyNow:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.sliderItem:nth-child(1){
+    background-color: whitesmoke;
+}
+.sliderItem:nth-child(2){
+    background-color: whitesmoke;
+}
+.sliderItem:nth-child(3){
+    background-color: whitesmoke;
+}
+.sliderItem:nth-child(4){
+    background-color: whitesmoke;
+}
+.sliderItem:nth-child(5){
+    background-color: whitesmoke;
+}
+.sliderImg{
+    padding-left: 95px;
+    zoom: 1.5;
+}
+.features{
+    display: flex;
+    padding: 13px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.featuresImg{
+    height: 50px;
+    width: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position:relative;
+}
+.payment{
+    width: 500px;
+    height: 400px;
+    background-color:#b5811a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: -1px 0px 16px 39px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 16px 39px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 16px 39px rgba(0,0,0,0.75);
+}
+.payTitle{
+    font-size: 20px;
+    color:black;
+    font-weight: 600;
+}
+label{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.payInput{
+    margin-bottom: 8px;
+    margin-right: 4px;
+    /* padding-right: 0px; */
+    /* padding-left: 0px; */
+    margin-top: 6px;
+}
+.payInput::placeholder{
+    color:black;
+}
+.payInput s{
+    margin-right: 5px;
+    width: 50px;
+}
+.payInput s:last-child{
+    width: 50;
+}
+.cardIcons{
+    margin-right: 10px;
+}
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+.productDes{
+    font-style: 24px;
+    color: gray;
+}
+.color, .sizes{
+    display: flex;
+    margin-bottom: 20;
+}
+.colors{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: gray;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+.colors1{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 8px;
+    background-color: rgb(172, 64, 64);
+}
+.size{
+    padding-right: 0px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 2px;
+    padding-top: 0px;
+}
+.productButton{
+    float:right;
+    padding: 8px;
+    border-color: black;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight:600;
+    background-color: black;
+    color: white;
+}
+.productButton:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.productImg{
+    padding: 157px;
+    padding-left: 44px;
+    width: 667px;
+    height: 400px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+.payButton{
+    position : absolute;
+    height: 40px;
+    bottom: -44px;
+    width: 100%;
+    left: 0;
+    background-color: #369e62;
+    color:whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: aliceblue;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+.sliderOffer{
+    margin-left: 8px;
+    color:#369e62;
+    font-size: 11px;
+}
+footer{
+    display: flex;
+}
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.footerRight{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fMenuTitle{
+    font-size: 16px;
+}
+.fList{
+    padding: 0;
+    list-style: none;
+}
+.fListItem{
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+}
+.finput{
+    padding: 5px;
+}
+.fButton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.fButton:hover{
+    background-color: azure;
+    color: black;
+}
+.fIcons{
+    display: flex;   
+}
+.ficon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.copyright{
+    font-weight: 300;
+    font-style: 14px;
+}
+.img{
+    width: 100%;
+    cursor:pointer;
+}
+@media screen and (max-width: 480px) {
+    nav{
+        padding: 20px;
+    }
+    .search{
+        display: none;
+    }
+    .menuItem{
+        margin: 20px;
+        font-weight: 700;
+        font-style: 20px;
+    }
+    .navBottom{
+        flex-wrap: wrap;
+    }
+    .slider{
+        clip-path: none;
+    }
+    .sliderImg{
+        width: 105%;
+    }
+    .slider_bg{
+        height: 100%;
+        width: 100%;
+    }
+    .sliderTitle{
+        display: none;
+    }
+    .sliderPrice{
+        top: unset;
+        bottom: 0;
+        left: 0;
+        background-color: lightgrey;
+    }
+    .buyButton{
+        bottom: 0;
+        right: 0;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .product{
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+
+  
